@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: olympic_db
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=olympic_db
+
